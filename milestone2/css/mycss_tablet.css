@@ -1,4 +1,4 @@
-/* ===== Tablet / Small screen stylesheet ===== */
+/* Tablet  */
 
 body {
   margin: 0;
@@ -16,7 +16,7 @@ div {
 }
 
 #menu {
-  position: static; /* no sticky on small screens */
+  position: static; 
   margin: 0;
   border-radius: 0;
   background: #222;
