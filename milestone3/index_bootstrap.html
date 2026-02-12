@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Who is Piotr? (Bootstrap)</title>
+
+  <style>
+    #menu h1 { letter-spacing: 1px; }
+  </style>
+
+  <!-- Bootstrap 4 (CDN) -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.6.2/css/bootstrap.min.css">
+
+  <!--milestone 2 CSS -->
+  <link rel="stylesheet" href="css/mycss_web.css" media="screen and (min-width: 901px)">
+  <link rel="stylesheet" href="css/mycss_tablet.css" media="screen and (max-width: 900px)">
+  <link rel="stylesheet" href="css/print.css" media="print">
+</head>
+
+<body>
+
+  <!--NAVBAR-->
+  <nav id="menu" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <a class="navbar-brand font-weight-bold" href="#Information">Piotr</a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navLinks">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navLinks">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="#Information">Profile</a></li>
+        <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+        <li class="nav-item"><a class="nav-link" href="#work">Work</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#interests">Interests</a></li>
+        <li class="nav-item"><a class="nav-link" href="#favorites">Favorites</a></li>
+        <li class="nav-item"><a class="nav-link" href="#websites">Websites</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#Reader">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- GRID-->
+  <div class="container my-4">
+
+    <div class="row">
+
+      <div class="col-lg-8">
+
+        <!-- CARD -->
+        <div id="Information" class="card mb-4 p-3">
+          <h1 style="text-transform: uppercase;">Profile Information</h1> <!-- inline style requirement -->
+
+          <p>
+            My name is <span class="badge badge-light">Piotr Zedzian</span>.
+            My major is <span class="badge badge-light">Computer Science</span>.
+          </p>
+
+          <div class="row">
+            <div class="col-md-6">
+              <p><span>Profile picture:</span></p>
+              <img class="img-fluid rounded profile-pic" src="image/20190220_160904.jpg" alt="Photo of Piotr" />
+            </div>
+            <div class="col-md-6">
+              <p><span>Exterior Image:</span></p>
+              <img class="img-fluid rounded" src="https://www.w3schools.com/css/img_lights.jpg" alt="Northern Lights" />
+            </div>
+          </div>
+        </div>
+
+        <div id="education" class="card mb-4 p-3">
+          <h1>Education Summary</h1>
+          <p>
+            I started learning computer science in high school through AP and design courses.
+            Now I study at St. John’s University and continue building projects in HTML, Python, and Java.
+          </p>
+
+          <!-- LIST GROUP -->
+          <p class="mb-2 font-weight-bold">Degrees / diplomas:</p>
+          <ul class="list-group">
+            <li class="list-group-item">High School Diploma — Christ the King</li>
+            <li class="list-group-item">B.S. Computer Science (in progress) — St. John’s University</li>
+          </ul>
+        </div>
+
+        <div id="work" class="card mb-4 p-3">
+          <h1>Work Experience / Internships</h1>
+          <ul class="list-group">
+            <li class="list-group-item">Various Handyman side jobs</li>
+            <li class="list-group-item">Web development internship through St. John’s University</li>
+            <li class="list-group-item">Personal projects in HTML, Java, and Python</li>
+          </ul>
+        </div>
+
+        <div id="skills" class="card mb-4 p-3">
+          <h1>Programming Skills</h1>
+          <p>Languages I’ve used and my current comfort level:</p>
+
+          <!-- TABLE -->
+          <div class="table-responsive">
+            <table class="table table-bordered table-hover">
+              <thead>
+                <tr>
+                  <th>Language</th>
+                  <th>Experience Level</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>HTML</td><td>Advanced</td></tr>
+                <tr><td>Java</td><td>Intermediate</td></tr>
+                <tr><td>Python</td><td>Intermediate</td></tr>
+                <tr><td>JavaScript</td><td>Beginner</td></tr>
+                <tr><td>CSS</td><td>Beginner</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div id="favorites" class="card mb-4 p-3">
+          <h1>Favorite Song, Film, and TV Show</h1>
+
+          <p>
+            <span>Favorite Song:</span>
+            <a class="btn btn-outline-dark btn-sm" target="_blank" rel="noopener noreferrer"
+               href="https://www.youtube.com/watch?v=pU4NJSTM44E">Bon Voyage</a>
+          </p>
+
+          <p>
+            <span>Favorite Movie:</span>
+            <a class="btn btn-outline-dark btn-sm" target="_blank" rel="noopener noreferrer"
+               href="https://www.youtube.com/watch?v=U8GdYixWfOc">The Godfather</a>
+          </p>
+
+          <p><span>Favorite TV Show:</span> Futurama</p>
+
+          <video class="w-100" controls>
+            <source src="media/futurama vid.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+
+          <p class="mt-2">
+            Watch on YouTube:
+            <a class="btn btn-outline-dark btn-sm" target="_blank" rel="noopener noreferrer"
+               href="https://www.youtube.com/watch?v=ZHN5Lg0SJyI">Futurama Clip</a>
+          </p>
+        </div>
+
+      </div>
+
+      
+      <!-- RIGHT COLUMN -->
+<div class="col-lg-4">
+
+  <!-- Row 1: Interests + Websites -->
+  <div class="row">
+    <div class="col-md-6 col-lg-12">
+      <div id="interests" class="card mb-4 p-3">
+        <h1>General Interests</h1>
+        <p>
+          I like rock climbing, going to the gym, skiing, swimming, and playing video games.
+          My favorite hobby right now is <span class="badge badge-light">rock climbing</span>.
+        </p>
+      </div>
+    </div>
+
+    <div class="col-md-6 col-lg-12">
+      <div id="websites" class="card mb-4 p-3">
+        <h1>Favorite Websites</h1>
+        <ul class="list-group">
+          <li class="list-group-item">
+            <a target="_blank" rel="noopener noreferrer" href="https://www.amazon.com/">Amazon</a>
+            <p class="mb-0">Amazon makes it easy to order niche things and the website is very functional.</p>
+          </li>
+          <li class="list-group-item">
+            <a target="_blank" rel="noopener noreferrer" href="https://www.car-part.com/">Car-part</a>
+            <p class="mb-0">A simple older-style website that does a great job with filtering car parts.</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Row 2: Projects + Reader -->
+  <div class="row">
+    <div class="col-md-6 col-lg-12">
+      <div id="projects" class="card mb-4 p-3">
+        <h1>My Projects in this Course</h1>
+        <p>This is my project index list. I will update it as the semester goes on.</p>
+
+        <div class="table-responsive">
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th>Project</th>
+                <th>Description</th>
+                <th>Link</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Profile Page</td>
+                <td>Main course profile page with sections + anchor menu.</td>
+                <td><a class="btn btn-dark btn-sm" href="index.html">Open</a></td>
+              </tr>
+              <tr>
+                <td>Implementing CSS</td>
+                <td>Styling milestone 1 profile page with CSS.</td>
+                <td><a class="btn btn-dark btn-sm" href="#" target="_blank">Link</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6 col-lg-12">
+      <div id="Reader" class="card mb-4 p-3">
+        <h1>Reader</h1>
+        <p>Fill in your name to mark that you have finished reading, and leave a suggestion</p>
+
+        <form>
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input id="name" type="text" class="form-control" name="name" required />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" class="form-control" name="message" rows="4" required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-dark btn-block">Send</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!--fallback-->
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
