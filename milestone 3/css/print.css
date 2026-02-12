@@ -1,0 +1,90 @@
+
+
+@media print {
+
+  /* Reset colors + effects for clean printing */
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  body {
+    font-family: Times New Roman, serif;
+    font-size: 12pt;
+    line-height: 1.4;
+    margin: 0;
+  }
+
+  /* Hide navigation  */
+  #menu,
+  nav,
+  button,
+  input[type="submit"],
+  video {
+    display: none !important;
+  }
+
+  /* Make sections flow naturally */
+  .card {
+    border: none !important;
+    margin: 0 0 14px 0 !important;
+    padding: 0 !important;
+    page-break-inside: avoid;
+  }
+
+  /* Headings */
+  h1 {
+    font-size: 18pt;
+    margin: 12px 0 6px 0;
+    border-bottom: 1px solid #000;
+    padding-bottom: 4px;
+  }
+
+  /* Paragraphs & lists */
+  p, li {
+    font-size: 12pt;
+    margin: 6px 0;
+  }
+
+  ul {
+    margin-left: 20px;
+  }
+
+  /* Tables */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 8px;
+  }
+
+  th, td {
+    border: 1px solid #000;
+    padding: 6px;
+    text-align: left;
+  }
+
+  th {
+    font-weight: bold;
+  }
+
+
+  img {
+    max-width: 300px;
+    height: auto;
+    border: none;
+    margin: 6px 0;
+  }
+
+  a::after {
+    content: " (" attr(href) ")";
+    font-size: 10pt;
+  }
+
+  input,
+  textarea {
+    display: none;
+  }
+
+}
